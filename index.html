@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navigation -->
+<nav>
+<header class="w3-container w3-pink">
+
+
+  <h1><a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#tour" class="w3-button w3-bar-item">About us</a>
+   <a href="#contact" class="w3-button w3-bar-item">Contact</a></h1>
+  </header>
+</nav>
+
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="1.jpg" style="width:100%">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="3.jpg" style="width:100%">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+<div class="w3-container">
+  <p>Natural world is governed by the laws of biology, chemistry and physics. The planet has been there for billions of years. We are all protected and governed by nature.
+
+A healthy environment provides nutrients that flow up the food chain, from plants to animals, to provide energy. The nutrients are then recycled to repeat the process.
+
+We must understand these very basic principles of nature and try to live with nature. We should not depend too much on concrete structures and all sort of chemicals.
+
+By preserving nature, the planet and all its inhabitants are guaranteed a constant supply of clean water and fresh air.
+</p>  
+</div>
+
+
+</div>
+</body>
+</html>
+
